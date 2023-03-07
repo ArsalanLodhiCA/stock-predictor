@@ -1,10 +1,14 @@
-from fastapi import FastAPI, Query, HTTPException
+from fastapi import FastAPI, Query, HTTPException   #fastapi instantiates the server for post requests
 from pydantic import BaseModel
 from model import predict, convert
 
 app = FastAPI()
 
-# pydantic models
+# pydantic models for incoming JSON payloads. FastAPI automatically parse the incoming JSON
+# and pass it to the function that add in the payload model similar to the incoming JSON 
+# in this case, get_prediction has a parameter payload: StockIn - that defines the structure
+# similar to the incoming payload.
+
 class StockIn(BaseModel):
     ticker: str
     days: int
@@ -13,6 +17,7 @@ class StockOut(StockIn):
     forecast: dict
 
 @app.post("/predict", response_model=StockOut, status_code=200)
+
 def get_prediction(payload: StockIn):
     ticker = payload.ticker
     days = payload.days

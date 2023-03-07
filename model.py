@@ -8,7 +8,7 @@ from prophet import Prophet
 
 import argparse
 
-BASE_DIR = Path(__file__).resolve(strict=True).parent
+BASE_DIR = Path(__file__).resolve(strict=True).parent # gives the absolute path of this file
 TODAY = datetime.date.today()
 
 
