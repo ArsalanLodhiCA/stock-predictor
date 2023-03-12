@@ -11,7 +11,7 @@ http://35.93.74.139:8000/predict
 ```
 
 ## EC2 Stock Predictor
-![Stock Predictor on EC2](https://github.com/ArsalanLodhiCA/stock-predictor/edit/main/ec2-stock-predictor.png)
+![Stock Predictor on EC2](https://github.com/ArsalanLodhiCA/stock-predictor/blob/main/ec2-stock-predictor.png)
 
 ## Algorithm Understanding
 
