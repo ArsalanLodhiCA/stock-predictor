@@ -10,6 +10,9 @@ http://35.93.74.139:8000/predict
 
 ```
 
+## EC2 Stock Predictor
+![Stock Predictor on EC2](https://drive.google.com/file/d/18h--rV0TeLofoSwbMVHZQgYhyxnY8w5a/view?usp=share_link)
+
 ## Algorithm Understanding
 
 * How does the Prophet Algorithm differ from an LSTM?
